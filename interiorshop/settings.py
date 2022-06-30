@@ -53,11 +53,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.cart',
-    'apps.core',
-    'apps.order',
-    'apps.product',
-    'apps.vendor'
+    'cart',
+    'core',
+    'order',
+    'product',
+    'vendor',
 ]
 
 
@@ -71,7 +71,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'interiorshop.urls'
+# ROOT_URLCONF = 'interiorshop.urls',
+
 
 TEMPLATES = [
     {
@@ -91,7 +92,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'interiorshop.wsgi.application'
+# WSGI_APPLICATION = 'interiorshop.wsgi.application'
 
 
 # Database
@@ -147,3 +148,5 @@ STATICFILES_DIRS = [
 ]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
